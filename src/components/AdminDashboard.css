@@ -1,0 +1,133 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents unnecessary scrolling */
+}
+
+/* Main Dashboard Container */
+.admin-dashboard {
+    width: 98vw; /* Make sure it fits the viewport */
+    max-height: 100vh; /* Prevents overflow */
+    margin: auto;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+/* Header */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap; /* Prevent overflow */
+}
+
+h2 {
+    font-size: 18px; /* Further reduced */
+    color: #333;
+}
+
+/* Logout Button */
+.logout-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Employee List */
+.employee-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px; /* Reduced spacing */
+    justify-content: center;
+    margin-top: 10px;
+    overflow-y: auto; /* Ensures scrolling */
+    max-height: 75vh; /* Ensures it doesn't go beyond viewport */
+}
+
+/* Employee Cards */
+.employee-card {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    width: 180px; /* Reduced size */
+    text-align: center;
+    border-left: 3px solid #007bff;
+    transition: transform 0.2s ease-in-out;
+    font-size: 12px; /* Reduce font */
+}
+
+.employee-card:hover {
+    transform: scale(1.02);
+}
+
+/* Buttons */
+.action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px; /* Reduced gap */
+    justify-content: center;
+}
+
+button {
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 10px; /* Smaller text */
+    cursor: pointer;
+}
+
+/* Add Employee Form */
+.add-employee-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.add-employee-form input {
+    padding: 6px; /* Reduce input size */
+    width: 180px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Feedback Section */
+.feedback-section input {
+    width: 70%;
+    padding: 4px;
+    font-size: 10px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .employee-card {
+        width: 150px; /* Adjust for small screens */
+        font-size: 10px;
+    }
+
+    .action-buttons button {
+        font-size: 9px;
+        padding: 4px 6px;
+    }
+
+    .add-employee-form input {
+        width: 150px;
+    }
+}

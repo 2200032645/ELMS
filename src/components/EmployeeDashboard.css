@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Dashboard Container */
+  .dashboard-container {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Top Bar */
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .dashboard-title {
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .logout-btn {
+    background: #d9534f;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  .logout-btn:hover {
+    background: #c9302c;
+  }
+  
+  /* Dropdown */
+  .select-dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Employee Card */
+  .employee-card {
+    background: #eef5ff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .employee-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #007bff;
+  }
+  
+  .employee-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  /* Buttons */
+  .primary-btn, .edit-btn, .update-btn, .leave-btn, .download-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+  }
+  
+  .primary-btn:hover, .edit-btn:hover, .update-btn:hover, .leave-btn:hover, .download-btn:hover {
+    background: #0056b3;
+  }
+  
+  .salary-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 10px;
+  }
+  
+  .leave-status {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff9800;
+    margin-top: 5px;
+  }
+  
+  /* Performance Chart */
+  .chart-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-container h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
